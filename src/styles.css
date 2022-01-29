@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navleft {
+  background-color: rgba(53, 32, 32, 0.849);
+  overflow: hidden;
+  height: 100px;
+
+  text-align: center;
+}
+
+.navleft a {
+  float: left;
+  color: #ecead8;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.navright {
+  float: right;
+  text-align: center;
+  margin-right: 20px;
+}
