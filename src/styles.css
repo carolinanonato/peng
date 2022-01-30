@@ -56,3 +56,11 @@ body {
 .banner h1 {
   font-size: 60px;
 }
+
+.about {
+  background-color: rgb(231, 197, 153);
+}
+
+.person {
+  width: 30%;
+}
