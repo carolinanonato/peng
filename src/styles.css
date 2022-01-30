@@ -13,8 +13,8 @@ body {
   background-color: rgba(53, 32, 32, 0.849);
   overflow: hidden;
   height: 100px;
-
   text-align: center;
+  position: relative;
 }
 
 .navleft a {
@@ -32,4 +32,27 @@ body {
   float: right;
   text-align: center;
   margin-right: 20px;
+}
+
+.main1 {
+  width: 50%;
+  height: 50%;
+  margin: 50px;
+}
+
+.banner {
+  display: flex;
+}
+
+.footer {
+  background-color: bisque;
+  width: auto;
+  height: 50px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.banner h1 {
+  font-size: 60px;
 }
