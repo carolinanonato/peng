@@ -1,32 +1,73 @@
-import Carousel from "react-bootstrap/Carousel";
 import mug2 from "../img/mug2.png";
 import mug3 from "../img/mug3.png";
 import mug4 from "../img/mug4.png";
+import React, { useState } from "react";
+import Carousel from "react-simply-carousel";
 
-<Carousel>
-  <Carousel.Item>
-    <img className="d-block w-100" src={mug2} alt="First slide" />
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img className="d-block w-100" src={mug3} alt="Second slide" />
+function CarouselComp() {
+  const [activeSlide, setActiveSlide] = useState(0);
 
-    <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img className="d-block w-100" src={mug4} alt="Third slide" />
+  return (
+    <Carousel
+      updateOnItemClick
+      containerProps={{
+        style: {
+          width: "100%",
+          justifyContent: "space-between",
+        },
+      }}
+      activeSlideIndex={activeSlide}
+      activeSlideProps={{
+        style: {
+          background: "",
+        },
+      }}
+      onRequestChange={setActiveSlide}
+      forwardBtnProps={{
+        children: ">",
+        style: {
+          width: 60,
+          height: 60,
+          minWidth: 60,
+          alignSelf: "center",
+        },
+      }}
+      backwardBtnProps={{
+        children: "<",
+        style: {
+          width: 60,
+          height: 60,
+          minWidth: 60,
+          alignSelf: "center",
+        },
+      }}
+      itemsToShow={4}
+      speed={400}
+    >
+      <div style={{ width: 300, height: 300 }}>
+        {" "}
+        <img className="main1" src={mug2} alt="" />
+      </div>
+      <div style={{ width: 300, height: 300 }}>
+        {" "}
+        <img className="main1" src={mug3} alt="" />
+      </div>
+      <div style={{ width: 300, height: 300 }}>
+        {" "}
+        <img className="main1" src={mug4} alt="" />
+      </div>
+      <div style={{ width: 300, height: 300 }}>
+        {" "}
+        <img className="main1" src={mug2} alt="" />
+      </div>
+      <div style={{ width: 300, height: 300 }}>
+        <img className="main1" src={mug2} alt="" />
+      </div>
+      <div style={{ width: 300, height: 300 }}>
+        <img className="main1" src={mug2} alt="" />
+      </div>
+    </Carousel>
+  );
+}
 
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>;
-
-export default Carousel;
+export default CarouselComp;
