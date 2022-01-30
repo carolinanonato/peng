@@ -1,6 +1,9 @@
 import mug2 from "../img/mug2.png";
-import mug3 from "../img/mug3.png";
+import mug6 from "../img/mug6.png";
 import mug4 from "../img/mug4.png";
+import mug5 from "../img/mug5.png";
+import mug7 from "../img/mug7.png";
+import mug8 from "../img/mug8.png";
 import React, { useState } from "react";
 import Carousel from "react-simply-carousel";
 
@@ -50,7 +53,7 @@ function CarouselComp() {
       </div>
       <div style={{ width: 300, height: 300 }}>
         {" "}
-        <img className="main1" src={mug3} alt="" />
+        <img className="main1" src={mug5} alt="" />
       </div>
       <div style={{ width: 300, height: 300 }}>
         {" "}
@@ -58,13 +61,13 @@ function CarouselComp() {
       </div>
       <div style={{ width: 300, height: 300 }}>
         {" "}
-        <img className="main1" src={mug2} alt="" />
+        <img className="main1" src={mug6} alt="" />
       </div>
       <div style={{ width: 300, height: 300 }}>
-        <img className="main1" src={mug2} alt="" />
+        <img className="main1" src={mug7} alt="" />
       </div>
       <div style={{ width: 300, height: 300 }}>
-        <img className="main1" src={mug2} alt="" />
+        <img className="main1" src={mug8} alt="" />
       </div>
     </Carousel>
   );

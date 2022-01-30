@@ -42,6 +42,7 @@ body {
 
 .banner {
   display: flex;
+  background-color: rgba(53, 32, 32, 0.849);
 }
 
 .footer {
