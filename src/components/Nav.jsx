@@ -6,14 +6,18 @@ function Nav() {
   return (
     <>
       <div className="navleft">
-        <a className="active" href="#home">
+        <a className="name-title" href="#home">
           Peng
         </a>
 
         <div className="navright">
-          <a href="#gallery">Gallery</a>
-          <a href="#about">About</a>
-          <a href="card">
+          <a className="item" href="#shop">
+            Shop
+          </a>
+          <a className="item" href="#about">
+            About
+          </a>
+          <a className="item" href="card">
             <FontAwesomeIcon icon={faCoffee} />
           </a>
         </div>

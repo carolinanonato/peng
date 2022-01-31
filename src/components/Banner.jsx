@@ -6,10 +6,10 @@ function Banner() {
     <>
       <div className="banner">
         <img className="main1" src={main} alt="" />
-        <h1>
-          ‘One can’t be angry when one looks at a Penguin’ - English art critic
-          John Ruskin
-        </h1>
+        <blockquote>
+          "One can’t be angry when one looks at a Penguin"
+          <p>John Ruskin - English art critic</p>
+        </blockquote>
       </div>
     </>
   );
