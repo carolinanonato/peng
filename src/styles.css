@@ -8,6 +8,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 .navleft {
@@ -128,4 +129,140 @@ blockquote p {
   display: flex;
   align-items: center;
   font-size: 20px;
+}
+
+.scrollTop {
+  position: fixed;
+  width: 100%;
+  bottom: 20px;
+  left: 800px;
+  align-items: right;
+  height: 20px;
+  justify-content: right;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+}
+
+.scrollTop:hover {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: 2200px) {
+  blockquote {
+    font-size: 80px;
+    margin-left: 350px;
+  }
+
+  .main1 {
+    margin-left: 400px;
+  }
+
+  .about {
+    height: 700px;
+  }
+}
+
+@media (min-width: 1950px) {
+  blockquote {
+    font-size: 80px;
+    margin-left: 350px;
+  }
+
+  .about {
+    height: 700px;
+  }
+}
+
+@media (max-width: 1250px) {
+  blockquote {
+    font-size: 50px;
+  }
+  .about {
+    height: 500px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1100px) {
+  blockquote {
+    font-size: 30px;
+    margin-top: 100px;
+    margin-right: 40px;
+  }
+
+  blockquote p {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 20px;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 724px) and (max-width: 799px) {
+  blockquote {
+    font-size: 25px;
+    margin-top: 70px;
+    margin-right: 40px;
+  }
+
+  blockquote p {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 20px;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 724px) {
+  .navright {
+    margin: 0;
+    float: none;
+  }
+
+  .item {
+    font-size: 15px;
+  }
+
+  .name-title {
+    font-size: 30px;
+  }
+
+  blockquote {
+    font-size: 25px;
+    margin-right: 30px;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  blockquote p {
+    font-size: 15px;
+  }
+
+  .text {
+    font-size: 20px;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .button {
+    padding-right: 10px;
+    left: 40%;
+  }
 }

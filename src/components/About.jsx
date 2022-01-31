@@ -14,7 +14,7 @@ function About() {
         <p className="text">
           We got to be honest: we started Peng because we love penguins. WHO
           doesn't? You can't just look at their cute faces, adorable wings,
-          small feet... ookay, they are adorable. Also: mugs? Everyone needs it.
+          small feet... ookay, they are adorable. Also, mugs? Everyone needs it.
           Part of every sale goes to Friend of the Sea, a organization that
           saved millions of penguins from death in tuna fishing nets and started
           the sustainable seafood movement.

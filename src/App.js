@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Banner from './components/Banner';
 import Carousel from './components/Carousel';
 import About from './components/About';
+import ScrollArrow from './components/ScrollArrow';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
 <Carousel />
 <About />
 <Footer />
+<ScrollArrow/>
 
 </>
   )
