@@ -4,6 +4,7 @@ import mug4 from "../img/mug4.png";
 import mug5 from "../img/mug5.png";
 import mug7 from "../img/mug7.png";
 import mug8 from "../img/mug8.png";
+import mug9 from "../img/mug9.png";
 import React, { useState } from "react";
 import Carousel from "react-simply-carousel";
 
@@ -33,6 +34,9 @@ function CarouselComp() {
           height: 60,
           minWidth: 60,
           alignSelf: "center",
+          border: 0,
+          background: "bisque",
+          fontWeight: 900,
         },
       }}
       backwardBtnProps={{
@@ -42,32 +46,69 @@ function CarouselComp() {
           height: 60,
           minWidth: 60,
           alignSelf: "center",
+          border: 0,
+          background: "bisque",
+          fontWeight: 900,
         },
       }}
-      itemsToShow={4}
+      itemsToShow={5}
       speed={400}
     >
-      <div style={{ width: 300, height: 300 }}>
-        {" "}
-        <img className="main1" src={mug2} alt="" />
+      <div style={{ width: 300, height: 300, textAlign: "center" }}>
+        <img
+          className="main1"
+          src={mug2}
+          alt=""
+          style={{ width: 150, height: 150 }}
+        />
       </div>
       <div style={{ width: 300, height: 300 }}>
-        {" "}
-        <img className="main1" src={mug5} alt="" />
+        <img
+          className="main1"
+          src={mug5}
+          alt=""
+          style={{ width: 150, height: 150 }}
+        />
       </div>
       <div style={{ width: 300, height: 300 }}>
-        {" "}
-        <img className="main1" src={mug4} alt="" />
+        <img
+          className="main1"
+          src={mug4}
+          alt=""
+          style={{ width: 150, height: 150 }}
+        />
       </div>
       <div style={{ width: 300, height: 300 }}>
-        {" "}
-        <img className="main1" src={mug6} alt="" />
+        <img
+          className="main1"
+          src={mug6}
+          alt=""
+          style={{ width: 150, height: 150 }}
+        />
       </div>
       <div style={{ width: 300, height: 300 }}>
-        <img className="main1" src={mug7} alt="" />
+        <img
+          className="main1"
+          src={mug7}
+          alt=""
+          style={{ width: 150, height: 150 }}
+        />
       </div>
       <div style={{ width: 300, height: 300 }}>
-        <img className="main1" src={mug8} alt="" />
+        <img
+          className="main1"
+          src={mug8}
+          alt=""
+          style={{ width: 150, height: 150 }}
+        />
+      </div>
+      <div style={{ width: 300, height: 300 }}>
+        <img
+          className="main1"
+          src={mug9}
+          alt=""
+          style={{ width: 150, height: 150 }}
+        />
       </div>
     </Carousel>
   );
