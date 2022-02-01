@@ -3,6 +3,8 @@ import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import "../styles.css";
 import Hamburger from "./Hamburger";
 import { useState } from "react";
+import ReactDOM from "react-dom";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function Nav() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -19,12 +21,12 @@ function Nav() {
         </a>
         <div className="navright">
           <a className="item" href="#shop">
-            Shop
+            <AnchorLink href="#shop">Shop</AnchorLink>
           </a>
           <a className="item" href="#about">
-            About
+            <AnchorLink href="#about">About</AnchorLink>
           </a>
-          <a className="item" href="card">
+          <a className="item" href="cart">
             <FontAwesomeIcon icon={faCoffee} />
           </a>
         </div>

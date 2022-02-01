@@ -31,6 +31,10 @@ body {
   margin-right: 50px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .name-title {
   float: left;
   color: #ecead8;

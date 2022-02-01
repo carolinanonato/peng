@@ -5,7 +5,7 @@ import person3 from "../img/person3.png";
 function About() {
   return (
     <>
-      <div className="about">
+      <div className="about" id="about">
         <div className="photos">
           <img className="person" src={person1} alt="" />
           <img className="person" src={person2} alt="" />

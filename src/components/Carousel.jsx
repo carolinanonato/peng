@@ -54,7 +54,7 @@ function CarouselComp() {
       itemsToShow={5}
       speed={400}
     >
-      <div style={{ width: 300, height: 300, textAlign: "center" }}>
+      <div id="shop" style={{ width: 300, height: 300, textAlign: "center" }}>
         <img
           className="main1"
           src={mug2}
