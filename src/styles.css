@@ -259,7 +259,7 @@ blockquote p {
   }
 
   .item {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .name-title {
@@ -313,7 +313,6 @@ blockquote p {
     font-size: 30px;
     width: 300px;
     margin: auto;
-
     margin-bottom: 20px;
   }
 
