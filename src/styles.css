@@ -159,6 +159,28 @@ blockquote p {
   }
 }
 
+.hamburger {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 10;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  top: 30px;
+  display: none;
+}
+
+.burger {
+  width: 30px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: bisque;
+  margin-top: 5px;
+}
+
 @media (min-width: 2200px) {
   blockquote {
     font-size: 80px;
@@ -264,5 +286,59 @@ blockquote p {
   .button {
     padding-right: 10px;
     left: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .navright {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .banner {
+    display: block;
+  }
+  .main1 {
+    width: 50%;
+  }
+
+  .name-title {
+    font-size: 30px;
+  }
+
+  blockquote {
+    font-size: 30px;
+    width: 300px;
+    margin: auto;
+
+    margin-bottom: 20px;
+  }
+
+  blockquote p {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .about {
+    height: 400px;
+    position: relative;
+  }
+  .text {
+    font-size: 15px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .button {
+    left: 10px;
+    margin-left: 200px;
+    font-size: 15px;
+  }
+
+  .footer {
+    font-size: 15px;
   }
 }

@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import "../styles.css";
-import { HashLink as Link } from "react-router-hash-link";
+import Hamburger from "./Hamburger";
 
 function Nav() {
   return (
@@ -22,6 +22,7 @@ function Nav() {
             <FontAwesomeIcon icon={faCoffee} />
           </a>
         </div>
+        <Hamburger />
       </div>
     </>
   );
