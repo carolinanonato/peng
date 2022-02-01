@@ -3,7 +3,6 @@ import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import "../styles.css";
 import Hamburger from "./Hamburger";
 import { useState } from "react";
-import ReactDOM from "react-dom";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function Nav() {
